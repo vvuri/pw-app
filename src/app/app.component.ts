@@ -19,4 +19,8 @@ export class AppComponent {
     { title: 'First Step', text: 'Text 2', id: 2 },
     { title: 'Run Server', text: 'Text 3', id: 3 }
   ]
+
+  updatePost(p: Post) {
+    this.posts.push(p)  // or unshift
+  }
 }
